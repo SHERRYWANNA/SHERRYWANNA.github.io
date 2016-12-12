@@ -10,7 +10,7 @@ em{font-weight: bolder;font-style: italic;}
 .left{float: left;}
 .right{float: right;}
 
-header{background-color: #71afa4;padding:3rem;color:#eee;min-width: 65rem;}
+header{width:100%;background-color: #71afa4;padding:3rem;color:#eee;min-width: 65rem;}
 header em{color: #447068;}
 header .head_photo{width:17rem;height:17rem;margin-left:1rem;margin-top:1rem;background-color: rgba(0,0,0,.1);border:1px solid #aad739;padding:2rem 0;text-align:center;-webkit-box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;position: relative;}
 header .head_photo img{height: 100%;}
