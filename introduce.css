@@ -29,7 +29,7 @@ main small{display: block;}
 main div.title{border-bottom: 1px solid #aa8a57;color: white;background: #aa8a57 url(images/title_bg.png) no-repeat;padding: 0 .4em;border-radius: .1em;background-size: auto 90%;background-position: 0 0;margin-top: 1rem;}
 main div.title .titleIcon{width: 1.6rem;height:1.6rem;vertical-align: text-bottom;}
 main div.title h3{display: inline-block;font-size: 1.3rem;}
-main hr.titleHr{border-bottom: 2px solid #aa8a57;width: 100%;margin-bottom: 1rem;}
+main hr.titleHr{border-bottom: 2px solid #aa8a57;width: 100%;margin-bottom: 1rem;clear:both;}
 main p.title{font-size: 1.2rem;}
 main small{font-size: .9rem;}
 main div.content div.content{margin-left: 2.8rem}
