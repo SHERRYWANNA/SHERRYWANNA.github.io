@@ -1,5 +1,5 @@
 *{margin:0;border:0;padding:0;font:14px/2 "\5FAE\8F6F\96C5\9ED1","Microsoft YaHei","\5B8B\4F53",Arial,sans-serif;-webkit-box-sizing: border-box;box-sizing: border-box;}
-body{background-color: #eee;}
+body{background-color: #eee;width: 100%;}
 a{text-decoration: none;}
 p,span,h1,h2,h3,h4,h5,h6,small{word-break: break-all;letter-spacing: .1em;}
 div.pointIcon{width: .6rem;height: .6rem;border-radius: 100%;background-color: #71afa4;margin:0 1rem;margin-top: .9rem;}
@@ -44,7 +44,7 @@ main .skillCircle .shadowCircle{width: 6.5rem;height: 6.5rem;top:.75rem;left:.75
 main .skillCircle .sector{width: 4rem;height: 4rem;position: absolute;top:0;left: 0;opacity: .4;
 	-webkit-transform-origin: 100% 100%;-o-transform-origin: 100% 100%;-moz-transform-origin: 100% 100%;-ms-transform-origin: 100% 100%;transform-origin: 100% 100%;
 	-webkit-transform:rotate(0deg) skew(80deg);-o-transform:rotate(0deg) skew(80deg);-moz-transform:rotate(0deg) skew(80deg);-ms-transform:rotate(0deg) skew(80deg);transform:rotate(0deg) skew(80deg);
-	-webkit-transition:all 3s;-o-transition:all 3s;transition:all 3s;
+	-webkit-transition:all 1.5s;-o-transition:all 1.5s;transition:all 1.5s;
 }
 
 @media screen and (max-width:680px){
