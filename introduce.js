@@ -18,15 +18,16 @@ function onload(){
 			_circle[i].getElementsByClassName("skillPercent")[0].appendChild(_sector);
 		}
 	}
+	alert(document.documentElement.clientWidth);
 }
 
 window.onscroll = function(){
 	var _scrollTop = document.body.scrollTop;
 	var _skillScrollTop = document.getElementsByClassName("skill")[0].getBoundingClientRect().top;
-	l(_skillScrollTop);
-	l(document.documentElement.clientHeight);
+	// l(_skillScrollTop);
+	// l(document.documentElement.clientHeight);
 	if(document.documentElement.clientHeight*2/3 <= _skillScrollTop <= 0 && skill == 0){
-		l("y");
+		// l("y");
 		var _circle = document.getElementsByClassName("skillCircle");
 		var _length = _circle.length;
 		for(var i = 0;i < _length;i++){
