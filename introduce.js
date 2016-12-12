@@ -18,6 +18,8 @@ function onload(){
 			_circle[i].getElementsByClassName("skillPercent")[0].appendChild(_sector);
 		}
 	}
+	alert(document.getElementsByTagName("body")[0].offsetWidth + "px");
+	alert(document.getElementsByTagName("header")[0].offsetWidth);
 }
 
 window.onscroll = function(){
@@ -36,7 +38,7 @@ window.onscroll = function(){
 				_circle[i].getElementsByClassName("sector")[n].style.webkitTransform = "rotate(" + (3.6*n+90) + "deg) skewX(80deg)";
 				_circle[i].getElementsByClassName("sector")[n].style.Otransform = "rotate(" + (3.6*n+90) + "deg) skewX(80deg)";	
 				
-				l(3.6*n+90);
+				// l(3.6*n+90);
 			}
 			skill = 1;
 		}
