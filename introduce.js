@@ -20,7 +20,6 @@ function onload(){
 	}
 	alert(document.getElementsByTagName("body")[0].offsetWidth + "px");
 	alert(document.getElementsByTagName("header")[0].offsetWidth);
-	
 }
 
 window.onscroll = function(){
