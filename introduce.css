@@ -9,12 +9,13 @@ img{vertical-align: middle;}
 em{font-weight: bolder;font-style: italic;}
 .left{float: left;}
 .right{float: right;}
+._divBackground{background-size: cover;background-position: center;background-repeat: no-repeat;}
 
 
 header{width:100%;background-color: #71afa4;padding:3rem;color:#eee;min-width: 65rem;}
 header em{color: #447068;}
-header .head_photo{width:17rem;height:17rem;margin-left:1rem;margin-top:1rem;background-color: rgba(0,0,0,.1);border:1px solid #aad739;padding:2rem 0;text-align:center;-webkit-box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;position: relative;}
-header .head_photo img{height: 100%;}
+header .head_photo{width:17rem;height:17rem;margin-left:1rem;margin-top:1rem;background-color: rgba(0,0,0,.1);border:1px solid #aad739;padding:2rem;text-align:center;-webkit-box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;position: relative;}
+header .head_photo ._divBackground{width:100%;height: 100%;background-image: url(images/photograph.jpg);}
 header .head_photo:before,header .head_photo:after{content:" ";clip: rect(0 0 0 0); border:2px solid #aad739;margin:-5%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;animation: turnAround 8s linear 0s infinite normal;-webkit-animation: turnAround 8s linear 0s infinite normal;}
 header .head_photo:after{animation-delay: -4s;-webkit-animation-delay: -4s;}
 
