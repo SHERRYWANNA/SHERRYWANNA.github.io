@@ -49,9 +49,9 @@ main .skillCircle .sector{width: 4rem;height: 4rem;position: absolute;top:0;left
 }
 
 @media screen and (max-width:680px){
-	*{font-size:10px;min-width: auto !important;max-width: 100%;}
+	*{font-size:10px;min-width: 1px !important;max-width: 100%;}
 	
-	header,main{min-width: auto;}
+	/*header,main{min-width: 320px;}*/
 	header>div{text-align: center;}
 	header>div>div{float:none !important;}
 	header .head_photo{display:inline-block;border-radius: 100%;width: 10rem;height:10rem;padding:.5rem;margin-left: 0;}
