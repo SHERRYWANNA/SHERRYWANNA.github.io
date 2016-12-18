@@ -18,8 +18,7 @@ function onload(){
 			_circle[i].getElementsByClassName("skillPercent")[0].appendChild(_sector);
 		}
 	}
-	// alert(document.getElementsByTagName("body")[0].offsetWidth + "px");
-	// alert(document.getElementsByTagName("header")[0].offsetWidth);
+	// l(typeof f1.prototype);
 }
 
 window.onscroll = function(){
@@ -50,4 +49,7 @@ function l(e){
 	console.log(e);
 }
 
-// haha
+// function f1(){
+// 	var i = 0;
+// 	return i;
+// }
