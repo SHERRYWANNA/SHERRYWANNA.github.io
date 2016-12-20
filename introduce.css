@@ -11,6 +11,9 @@ em{font-weight: bolder;font-style: italic;}
 .right{float: right;}
 ._divBackground{background-size: cover;background-position: center;background-repeat: no-repeat;}
 
+.mask{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background-color: rgba(0,0,0,.7);z-index: 1000;}
+.mask_stamp{padding:.5rem 1rem;border:.2em solid #cf3f25;text-align: center;font-size: 4rem;left:50%;top:50%;position: absolute;color: #cf3f25;
+transform: translate(-50%,-50%) rotate(20deg);-webkit-transform: translate(-50%,-50%) rotate(20deg);-o-transform: translate(-50%,-50%) rotate(20deg);}
 
 header{width:100%;background-color: #71afa4;padding:3rem;color:#eee;min-width: 65rem;}
 header em{color: #447068;}
