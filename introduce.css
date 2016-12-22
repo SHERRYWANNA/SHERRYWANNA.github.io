@@ -11,14 +11,17 @@ em{font-weight: bolder;font-style: italic;}
 .right{float: right;}
 ._divBackground{background-size: cover;background-position: center;background-repeat: no-repeat;}
 
-.mask{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background-color:black;opacity:.5;z-index: 1000;}
-.mask_stamp{padding:.5em 1em;border:.2em solid #cf3f25;text-align: center;font-size: 4em;left:50%;top:50%;position: absolute;color: #cf3f25;
-transform: translate(-50%,-50%) rotate(20deg);-webkit-transform: translate(-50%,-50%) rotate(20deg);-o-transform: translate(-50%,-50%) rotate(20deg);}
+.mask{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background-color:black;filter:opacity(50%);filter:alpha(opacity=50);-webkit-filter:opacity(50%);z-index: 1000;}
+.mask_stamp{padding:0 .5em;border:.2em solid #cf3f25;text-align: center;font-size: 4em;left:50%;top:50%;position: absolute;color: #cf3f25;margin-top: -2em;margin-left: -2em;
+transform: rotate(20deg);-webkit-transform: rotate(20deg);-o-transform: rotate(20deg);-ms-transform: rotate(20deg);-moz-transform: rotate(20deg);
+filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.9,M12=-0.34,M21=0.34,M22=0.9,sizingMethod="auto expand");}
 
 header{width:100%;background-color: #71afa4;padding:3em;color:#eee;min-width: 65em;}
 header em{color: #447068;}
 header .head_photo{width:17em;height:17em;margin-left:1em;margin-top:1em;background-color: #669394;background-color: rgba(0,0,0,.1);border:1px solid #aad739;padding:2em;text-align:center;-webkit-box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;box-shadow: -1px -1px 10px rgba(0,0,0,.1) inset;position: relative;}
-header .head_photo ._divBackground{width:100%;height: 100%;background-image: url(images/photograph.jpg);}
+header .head_photo ._divBackground{width:100%;height: 100%;background-image: url(images/photograph.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='images/photograph.jpg',
+sizingMethod='scale');}
 header .head_photo:before,header .head_photo:after{content:" ";clip: rect(0 0 0 0); border:2px solid #aad739;margin:-5%;position: absolute;top: 0;left: 0;right: 0;bottom: 0;animation: turnAround 8s linear 0s infinite normal;-webkit-animation: turnAround 8s linear 0s infinite normal;}
 header .head_photo:after{animation-delay: -4s;-webkit-animation-delay: -4s;}
 
@@ -45,8 +48,8 @@ main .skillCircle .outCircle{width: 6.5em;height: 6.5em;border-radius:100%;posit
 main .skillCircle .skillPercent{position: absolute;top:0;left: 0;right: 0;bottom: 0;z-index: 0;border-radius: 100%;overflow: hidden;}
 main .skillCircle .innerCircle{width: 6.5em;height: 6.5em;text-align:center;top:.75em;left:.75em;position: absolute;z-index: 3;}
 main .skillCircle .innerCircle p{font-size: 1.5em;color: white;line-height: 4.5em;}
-main .skillCircle .shadowCircle{width: 6.5em;height: 6.5em;top:.75em;left:.75em;position: absolute;z-index: 4;clip: rect(0 3.25em 8em 0);background-color:black;opacity:.2;border-radius: 100%;}
-main .skillCircle .sector{width: 4em;height: 4em;position: absolute;top:0;left: 0;opacity: .4;
+main .skillCircle .shadowCircle{width: 6.5em;height: 6.5em;top:.75em;left:.75em;position: absolute;z-index: 4;clip: rect(0 3.25em 8em 0);background-color:black;filter:opacity(20%);filter:alpha(opacity=20);-webkit-filter:opacity(20%);border-radius: 100%;}
+main .skillCircle .sector{width: 4em;height: 4em;position: absolute;top:0;left: 0;filter:opacity(40);filter: alpha(opacity=40);-webkit-filter:opacity(40);
 	-webkit-transform-origin: 100% 100%;-o-transform-origin: 100% 100%;-moz-transform-origin: 100% 100%;-ms-transform-origin: 100% 100%;transform-origin: 100% 100%;
 	-webkit-transform:rotate(0deg) skew(80deg);-o-transform:rotate(0deg) skew(80deg);-moz-transform:rotate(0deg) skew(80deg);-ms-transform:rotate(0deg) skew(80deg);transform:rotate(0deg) skew(80deg);
 	-webkit-transition:all 1.5s;-o-transition:all 1.5s;transition:all 1.5s;
@@ -67,6 +70,7 @@ main .skillCircle .sector{width: 4em;height: 4em;position: absolute;top:0;left: 
 
 	main{width: 100%;}
 	main .skillCircle{margin:2em 1em;margin:2em calc((100% - 24em)/7);}
+	main .skillCircle .innerCircle p{line-height: 5.5em;}
 }
 
 @keyframes turnAround{
